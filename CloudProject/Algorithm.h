@@ -7,9 +7,7 @@ class Algorithm {
 	
 	public:
 		
-		virtual void work(vector<Node>&);
-		
-	private:
+		virtual void work(vector<Node>&) = 0;
 		
 };
 

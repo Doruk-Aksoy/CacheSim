@@ -1,14 +1,10 @@
 #ifndef SIMULATOR_IN
 #define SIMULATOR_IN
 
-#include <string>
-
 #include "Global.h"
 #include "Algorithm.h"
 #include "RNG.h"
 #include "Node.h"
-
-using std::string;
 
 enum sim_t {
 	SIM_FIFO,
@@ -43,7 +39,7 @@ class Simulator {
 		uint64_t		frame;				// Current time frame of the simulation
 		sim_t			st;					// Simulation type (Algorithm)
 		RNG				rgen;				// Random Number Generator
-		vector<Node>	nodes;				// Nodes to run the simulation on
+		vector<Node*>	nodes;				// Nodes to run the simulation on
 	
 };
 

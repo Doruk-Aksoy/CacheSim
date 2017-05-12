@@ -4,10 +4,12 @@
 #include "Global.h"
 
 enum data_type {
-	DATA_TYPE_ONDEMAND,
 	DATA_TYPE_PERIODIC,
+	DATA_TYPE_ONDEMAND,
 	DATA_TYPE_EMERGENCY
 };
+
+extern const char* data_type_labels[DATA_TYPE_EMERGENCY + 1];
 
 enum meta_value {
 	META_BIN,
@@ -65,5 +67,7 @@ class Data {
 		datasize_t				d_pos;			// Used for determining the retrieval delay
 		
 };
+
+data_type get_type_from_label(const string&);
 
 #endif
