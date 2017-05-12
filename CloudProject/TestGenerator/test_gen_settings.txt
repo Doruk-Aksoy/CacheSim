@@ -1,0 +1,16 @@
+# Node count, amount of nodes in cloud
+NODES = 10
+# Node data max count, maximum data per node
+DATA_PER_NODE = 1000
+# DATA_SIZE_MIN, controls minimum value of data size simulated in bytes
+DATA_SIZE_MIN = 10
+# DATA_SIZE_MAX, controls maximum value of data size simulated in bytes
+DATA_SIZE_MAX = 131072
+# DATA_AGE_MIN, controls minimum value of data age simulated in frames
+DATA_AGE_MIN = 1
+# DATA_AGE_MAX, controls maximum value of data age simulated in frames
+DATA_AGE_MAX = 200
+# DATA_DELAY_MAX, controls maximum delay value a data can have for retrieval (all delays are unique) in frames
+DATA_DELAY_MAX = 200
+# TESTFILECOUNT, how many different test files to generate
+TESTFILECOUNT = 10

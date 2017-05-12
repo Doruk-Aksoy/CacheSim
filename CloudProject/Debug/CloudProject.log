@@ -1,0 +1,10 @@
+﻿  Simulator.cpp
+c:\users\doruk\documents\visual studio 2015\projects\cloudproject\cloudproject\rng.h(23): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+c:\users\doruk\documents\visual studio 2015\projects\cloudproject\cloudproject\simulator.h(23): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+  Main.cpp
+c:\users\doruk\documents\visual studio 2015\projects\cloudproject\cloudproject\rng.h(23): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+c:\users\doruk\documents\visual studio 2015\projects\cloudproject\cloudproject\simulator.h(23): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data
+  Algorithm.cpp
+  Generating Code...
+  CloudProject.vcxproj -> c:\users\doruk\documents\visual studio 2015\Projects\CloudProject\Debug\CloudProject.exe
+  CloudProject.vcxproj -> c:\users\doruk\documents\visual studio 2015\Projects\CloudProject\Debug\CloudProject.pdb (Partial PDB)
