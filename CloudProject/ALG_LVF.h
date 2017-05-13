@@ -2,7 +2,7 @@
 
 #include "Algorithm.h"
 
-class ALG_FIFO : public Algorithm {
+class ALG_LVF : public Algorithm {
 
 	public:
 

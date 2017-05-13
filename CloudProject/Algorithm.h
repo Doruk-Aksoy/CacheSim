@@ -1,14 +1,12 @@
-#ifndef ALGORITHM_IN
-#define ALGORITHM_IN
+#pragma once
 
+#include "Simulator.h"
 #include "Node.h"
 
 class Algorithm {
 	
 	public:
-		
-		virtual void work(vector<Node>&) = 0;
+
+		virtual void work(vector<Node*>&) = 0;
 		
 };
-
-#endif

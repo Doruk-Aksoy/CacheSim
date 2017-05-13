@@ -1,5 +1,4 @@
-#ifndef SIMULATOR_IN
-#define SIMULATOR_IN
+#pragma once
 
 #include "Global.h"
 #include "Algorithm.h"
@@ -17,7 +16,8 @@ class Simulator {
 	
 	public:
 		
-		Simulator(sim_t s) : st(s), rgen(std::chrono::high_resolution_clock::now().time_since_epoch().count()) { }
+		Simulator(sim_t s) : st(s) { }
+		~Simulator();
 		
 		uint64_t get_frame() {
 			return frame;
@@ -27,10 +27,6 @@ class Simulator {
 			frame = f;
 		}
 		
-		RNG& get_rng() {
-			return rgen;
-		}
-		
 		void run(int, int);
 		void read_data(const string&);
 		
@@ -38,9 +34,6 @@ class Simulator {
 		
 		uint64_t		frame;				// Current time frame of the simulation
 		sim_t			st;					// Simulation type (Algorithm)
-		RNG				rgen;				// Random Number Generator
 		vector<Node*>	nodes;				// Nodes to run the simulation on
 	
 };
-
-#endif

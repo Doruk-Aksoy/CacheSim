@@ -1,9 +1,15 @@
 #include <sstream>
 
-#include "Algorithm.h"
+#include "Algorithm_Factory.h"
 #include "Simulator.h"
 
 const char* data_type_labels[DATA_TYPE_EMERGENCY + 1] = { "Periodic", "On Demand", "Emergency" };
+const RNG rgen(static_cast<unsigned int>(std::chrono::high_resolution_clock::now().time_since_epoch().count()));
+
+Simulator::~Simulator() {
+	for (auto n : nodes)
+		delete n;
+}
 
 void Simulator::read_data(const string& fname) {
 	fstream input(fname, std::ios::in);
@@ -78,5 +84,7 @@ void Simulator::run(int begin, int end) {
 		read_data(temp.str());
 		cout << "Simulation is starting...\n";
 		// run simulation with specified simulation method
+		Algorithm* A = Algorithm_Factory::get_algorithm(st);
+		A->work(nodes);
 	}
 }

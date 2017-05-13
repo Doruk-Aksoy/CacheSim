@@ -20,6 +20,6 @@ class RNG {
 };
 
 // we will use this one for generating, it's global
-const RNG rgen (std::chrono::high_resolution_clock::now().time_since_epoch().count());
+extern const RNG rgen;
 
 #endif
