@@ -25,22 +25,30 @@ class Data {
 	
 	public:
 		
-		Data(data_type dt, datasize_t ds, datasize_t da, meta_value dm) : d_type(dt), d_size(ds), d_age(da), d_meta(dm) { }
+		Data(datasize_t di, data_type dt, datasize_t ds, datasize_t da, meta_value dm, datasize_t dd) : d_id(di), d_type(dt), d_size(ds), d_age(da), d_meta(dm), d_delay(dd) { }
 		
-		data_type get_type() {
+		data_type get_type() const {
 			return d_type;
 		}
 		
-		datasize_t get_size() {
+		datasize_t get_size() const {
 			return d_size;
 		}
 
-		datasize_t get_age() {
+		datasize_t get_age() const {
 			return d_age;
 		}
 		
-		datasize_t get_meta() {
+		datasize_t get_meta() const {
 			return d_meta;
+		}
+
+		datasize_t get_id() const {
+			return d_id;
+		}
+
+		datasize_t get_delay() const {
+			return d_delay;
 		}
 		
 		void set_type(data_type dt) {
@@ -60,11 +68,12 @@ class Data {
 		
 	private:
 		
+		datasize_t				d_id;			// Id of the data
 		data_type				d_type;			// Type of data
 		datasize_t				d_size;			// Size of the data on memory
 		datasize_t				d_age;			// Age used for LRU and related
 		meta_value				d_meta;			// Meta data used for calculations
-		datasize_t				d_pos;			// Used for determining the retrieval delay
+		datasize_t				d_delay;		// Used for determining the retrieval delay in us
 		
 };
 

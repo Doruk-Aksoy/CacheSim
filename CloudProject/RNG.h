@@ -20,6 +20,6 @@ class RNG {
 };
 
 // we will use this one for generating, it's global
-extern const RNG rgen;
+extern RNG rgen;
 
 #endif

@@ -9,7 +9,10 @@
 #include <string>
 #include <sstream>
 
-#define MAX_PARAMS 6
+#define MAX_PARAMS 5
+#define CACHE_DATA_ACCESS_DELAY 5 // 5 ns assumed
+#define DELAY_CONVERT_RATIO 1000.0 // from ms to us
+#define CACHE_CONVERT_RATIO 1000000.0 // from ns to ms
 
 using std::cout;
 using std::cin;

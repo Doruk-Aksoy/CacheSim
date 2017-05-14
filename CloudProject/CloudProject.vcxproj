@@ -29,6 +29,7 @@
     <ClInclude Include="Global.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="RNG.h" />
+    <ClInclude Include="Simulation_Result.h" />
     <ClInclude Include="Simulator.h" />
   </ItemGroup>
   <ItemGroup>
