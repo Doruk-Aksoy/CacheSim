@@ -58,7 +58,7 @@ class Data {
 			d_size = ds;
 		}
 		
-		void set_age(data_type da) {
+		void set_age(datasize_t da) {
 			d_age = da;
 		}
 		
@@ -78,5 +78,11 @@ class Data {
 };
 
 data_type get_type_from_label(const string&);
+
+struct data_age_compare {
+	bool operator() (const Data& D1, const Data& D2) const {
+		return D1.get_age() < D2.get_age();
+	}
+};
 
 #endif

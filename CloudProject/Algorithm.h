@@ -29,12 +29,15 @@ class Algorithm {
 
 		bool find_data(vector<Data>& cache, uint64_t id) {
 			cache_delay = 0;
+			data_pos = 0;
 			for (Data& D : cache)
 				if (D.get_id() == id)
 					return true;
-				else
+				else {
 					cache_delay += CACHE_DATA_ACCESS_DELAY;
-			return false;
+					data_pos++;
+				}
+				return false;
 		}
 
 		uint64_t get_sim_delay() const {
