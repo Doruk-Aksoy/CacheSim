@@ -65,6 +65,11 @@ class Data {
 		void set_meta(meta_value dm) {
 			d_meta = dm;
 		}
+
+		// calculates the proposed skf value
+		double get_skf_value() const {
+
+		}
 		
 	private:
 		
@@ -82,6 +87,18 @@ data_type get_type_from_label(const string&);
 struct data_age_compare {
 	bool operator() (const Data& D1, const Data& D2) const {
 		return D1.get_age() < D2.get_age();
+	}
+};
+
+struct data_value_compare {
+	bool operator() (const Data& D1, const Data& D2) const {
+		return D1.get_meta() < D2.get_meta();
+	}
+};
+
+struct data_skf_compare {
+	bool operator() (const Data& D1, const Data& D2) const {
+		return D1.get_skf_value() < D2.get_skf_value();
 	}
 };
 
