@@ -4,18 +4,21 @@
 #include "Simulator.h"
 
 const char* data_type_labels[DATA_TYPE_EMERGENCY + 1] = { "Periodic", "On Demand", "Emergency" };
+const char* simulation_label[SIM_SKF + 1] = { "FIFO", "LRU", "SKF" };
 RNG rgen(static_cast<unsigned int>(std::chrono::high_resolution_clock::now().time_since_epoch().count()));
 
 Simulator::~Simulator() {
 	for (auto n : nodes)
 		delete n;
+	nodes.clear();
 }
 
 void Simulator::read_data(const string& fname) {
 	fstream input(fname, std::ios::in);
+	data_count = 0;
 	if (input.is_open()) {
 		string temp;
-		int cnt = 0, id_counter = 0;
+		uint64_t cnt = 0, id_counter = 0;
 		Node* node_temp = nullptr;
 		Node** ref = nullptr;
 
@@ -48,7 +51,7 @@ void Simulator::read_data(const string& fname) {
 				}
 				else {
 					ss >> parse >> parse >> meta;
-					Data D(id, type, size, 0, static_cast<meta_value>(meta), delay);
+					Data D(id, type, size, 0, static_cast<meta_value>(meta), delay, 0);
 					data_count++; // increment data count
 					(*ref)->add_Data(D);
 				}
@@ -95,12 +98,20 @@ void Simulator::run(int begin, int end) {
 		// each iteration, pick a different data to use
 		Algorithm* A = Algorithm_Factory::get_algorithm(st);
 		Simulation_Result R = A->work(nodes, cache_size, iter, data_count);
-		report_result(R);
+		report_result(R, i);
+
+		for (Node* n : nodes)
+			delete n;
+		nodes.clear();
+
+		delete A;
 	}
 }
 
-void Simulator::report_result(const Simulation_Result& R) {
-	fstream outf("sim_result.txt", std::ios::out);
+void Simulator::report_result(const Simulation_Result& R, int id) {
+	stringstream temp;
+	temp << "simresult_" << simulation_label[st] << "_" << id << ".txt";
+	fstream outf(temp.str(), std::ios::out);
 	outf << "---- Simulation Results ----\n";
 	outf << "Hit Ratio: " << R.get_hit_ratio() << "\nMiss Ratio: " << R.get_miss_ratio() << "\nTime-to-hit (ms): " << R.get_time_to_hit() << "\nTotal Cache Delay (ms): " << R.get_total_cache_access_delay();
 	cout << "Simulation ended.\n";

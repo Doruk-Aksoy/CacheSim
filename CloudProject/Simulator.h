@@ -9,9 +9,10 @@
 enum sim_t {
 	SIM_FIFO,
 	SIM_LRU,
-	SIM_LVF,
 	SIM_SKF
 };
+
+extern const char* simulation_label[SIM_SKF + 1];
 
 class Simulator {
 	
@@ -28,19 +29,19 @@ class Simulator {
 			frame = f;
 		}
 		
-		void run(int, int);								// Runs the simulation
-		void dump_nodes();								// Debug
-		void read_data(const string&);					// Reads data from file
-		void report_result(const Simulation_Result&);	// Dumps output file
+		void run(int, int);										// Runs the simulation
+		void dump_nodes();										// Debug
+		void read_data(const string&);							// Reads data from file
+		void report_result(const Simulation_Result& ,int);		// Dumps output file
 		
 	private:
 		
-		uint64_t		frame;							// Current time frame of the simulation
-		uint64_t		iter;							// Iteration count
-		uint64_t		cache_size;						// Size of the cache
-		sim_t			st;								// Simulation type (Algorithm)
-		vector<Node*>	nodes;							// Nodes to run the simulation on
+		uint64_t		frame;									// Current time frame of the simulation
+		uint64_t		iter;									// Iteration count
+		uint64_t		cache_size;								// Size of the cache
+		sim_t			st;										// Simulation type (Algorithm)
+		vector<Node*>	nodes;									// Nodes to run the simulation on
 
-		uint64_t		data_count;						// Total count of data in all nodes
+		uint64_t		data_count;								// Total count of data in all nodes
 
 };

@@ -13,7 +13,7 @@ Simulation_Result ALG_LRU::work(vector<Node*>& nodes, uint64_t cache_size, uint6
 		if (find_data(cache, data_id)) {
 			hit_count++;
 			total_cache_delay += cache_delay;
-			cache[data_pos].set_age(cache[data_pos].get_age() + 1);
+			cache[data_pos].set_freq(cache[data_pos].get_freq() + 1);
 		}
 		else {
 			if (cache.size() < cache_size) {
@@ -34,7 +34,7 @@ Simulation_Result ALG_LRU::work(vector<Node*>& nodes, uint64_t cache_size, uint6
 				total_delay += sim_delay;
 			}
 		}
-		std::sort(cache.begin(), cache.end(), data_age_compare());
+		std::sort(cache.begin(), cache.end(), data_freq_compare());
 	}
 	return Simulation_Result(hit_count, miss_count, total_delay, total_cache_delay, iter);
 }

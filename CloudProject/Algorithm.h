@@ -8,7 +8,7 @@ class Algorithm {
 	
 	public:
 
-		Algorithm() : sim_delay(0), data_pos(0) { }
+		Algorithm() : sim_delay(0), data_pos(0), cache_delay(0) { }
 
 		// find data in a given network of nodes
 		Node* find_data(vector<Node*>& nodes, uint64_t data_id) {

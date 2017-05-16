@@ -3,7 +3,6 @@
 #include "Algorithm.h"
 #include "ALG_FIFO.h"
 #include "ALG_LRU.h"
-#include "ALG_LVF.h"
 #include "ALG_SKF.h"
 
 class Algorithm_Factory {
@@ -15,8 +14,6 @@ class Algorithm_Factory {
 				return new ALG_FIFO();
 			else if (s == SIM_LRU)
 				return new ALG_LRU();
-			else if (s == SIM_LVF)
-				return new ALG_LVF();
 			else
 				return new ALG_SKF();
 		}

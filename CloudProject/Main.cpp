@@ -6,7 +6,7 @@
 int main(int agrc, char* argv[]) {
 	int begin, end, simt;
 	uint64_t iterations, cache_count;
-	cout << "Enter simulation type\n\t0. FIFO\n\t1. LRU\n\t2. LVF\n\t3. SKF\nType: ";
+	cout << "Enter simulation type\n\t0. FIFO\n\t1. LRU\n\t2. SKF\nType: ";
 	cin >> simt;
 	cout << "Enter which test case range to run: (begin end) ";
 	cin >> begin >> end;
