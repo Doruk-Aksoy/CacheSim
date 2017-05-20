@@ -10,3 +10,19 @@ DATA_SIZE_MAX = 131072
 DATA_DELAY_MAX = 200
 # TESTFILECOUNT, how many different test files to generate
 TESTFILECOUNT = 10
+# WEIGHT_PERIODIC, controls the weight of periodic data types
+WEIGHT_PERIODIC = 2
+# WEIGHT_ONDEMAND, controls the weight of on-demand data types
+WEIGHT_ONDEMAND = 3
+# WEIGHT_EMERGENCY, controls the weight of emergency data types
+WEIGHT_EMERGENCY = 5
+# WEIGHT_META_BIN, controls the weight of binary meta type
+WEIGHT_META_BIN = 1
+# WEIGHT_META_TXT, controls the weight of text meta type
+WEIGHT_META_TXT = 2
+# WEIGHT_META_IMAGE, controls the weight of image meta type
+WEIGHT_META_IMAGE = 3
+# WEIGHT_META_SOUND, controls the weight of sound meta type
+WEIGHT_META_SOUND = 5
+# WEIGHT_META_VIDEO, controls the weight of video meta type
+WEIGHT_META_VIDEO = 10
