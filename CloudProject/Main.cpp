@@ -4,10 +4,12 @@
 #include "Simulator.h"
 
 int main(int agrc, char* argv[]) {
-	int begin, end, simt;
-	uint64_t iterations, cache_count;
-	cout << "Enter simulation type\n\t0. FIFO\n\t1. LRU\n\t2. SKF\nType: ";
-	cin >> simt;
+begin:
+	vector<uint64_t> data_ids;
+	int begin, end;
+	uint64_t iterations, cache_count, maxd;
+	cout << "The simulator will run FIFO, LRU and SKF on given test files.\nEnter max data count: ";
+	cin >> maxd;
 	cout << "Enter which test case range to run: (begin end) ";
 	cin >> begin >> end;
 	// iterations simulate the data access count, more the better
@@ -15,11 +17,20 @@ int main(int agrc, char* argv[]) {
 	cin >> iterations;
 	cout << "Cache size? (How many elements to cache) ";
 	cin >> cache_count;
-	Simulator S(static_cast<sim_t>(simt), iterations, cache_count);
-	S.run(begin, end);
+	// populate the data sequence to test for
+	Simulator::populate(data_ids, maxd, iterations);
+	for (int i = 0; i < MAX_ALGORITHMS; ++i) {
+		Simulator S(static_cast<sim_t>(i), iterations, cache_count, data_ids);
+		for (int j = begin; j <= end; ++j)
+			S.run(j);
+	}
 
-	int x;
-	cin >> x;
+	char rep;
+	cout << "Do you want to repeat? (Y/N)";
+	cin >> rep;
+
+	if (rep == 'Y')
+		goto begin;
 
 	return 0;
 }

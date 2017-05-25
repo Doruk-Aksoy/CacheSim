@@ -77,6 +77,11 @@ void Simulator::read_data(const string& fname) {
 		cout << "File could not be opened.\n";
 }
 
+void Simulator::populate(vector<uint64_t>& ds, uint64_t maxd, uint64_t it) {
+	for (uint64_t i = 0; i < it; ++i)
+		ds.push_back(rgen.pick<uint64_t>(1, maxd));
+}
+
 void Simulator::dump_nodes() {
 	for (Node* N : nodes) {
 		cout << "Node " << N->get_id() << " Data:\n";
@@ -86,26 +91,24 @@ void Simulator::dump_nodes() {
 	}
 }
 
-void Simulator::run(int begin, int end) {
-	for (int i = begin; i <= end; ++i) {
-		stringstream temp;
-		temp << "test_" << i << ".txt";
-		// first read the random test data generated
-		read_data(temp.str());
-		// dump_nodes();
-		cout << "Simulation is starting...\n";
-		// run the specified algorithm iter many times
-		// each iteration, pick a different data to use
-		Algorithm* A = Algorithm_Factory::get_algorithm(st);
-		Simulation_Result R = A->work(nodes, cache_size, iter, data_count);
-		report_result(R, i);
+void Simulator::run(int id) {
+	stringstream temp;
+	temp << "test_" << id << ".txt";
+	// first read the random test data generated
+	read_data(temp.str());
+	// dump_nodes();
+	cout << "Simulation is starting...\n";
+	// run the specified algorithm iter many times
+	// each iteration, pick a different data to use
+	Algorithm* A = Algorithm_Factory::get_algorithm(st);
+	Simulation_Result R = A->work(nodes, cache_size, iter, data_seq);
+	report_result(R, id);
 
-		for (Node* n : nodes)
-			delete n;
-		nodes.clear();
+	for (Node* n : nodes)
+		delete n;
+	nodes.clear();
 
-		delete A;
-	}
+	delete A;
 }
 
 void Simulator::report_result(const Simulation_Result& R, int id) {

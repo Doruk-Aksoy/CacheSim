@@ -2,19 +2,14 @@
 
 #include <algorithm>
 
-void ALG_SKF::do_age_pass(vector<Data>& cache) {
-	for (Data& D : cache)
-		D.set_age(D.get_age() + 1);
-}
-
-Simulation_Result ALG_SKF::work(vector<Node*>& nodes, uint64_t cache_size, uint64_t iter, uint64_t data_count) {
+Simulation_Result ALG_SKF::work(vector<Node*>& nodes, uint64_t cache_size, uint64_t iter, const vector<uint64_t>& dseq) {
 	// create a queue to hold cache_size many elements
 	vector<Data> cache;
 	uint64_t total_delay = 0, hit_count = 0, miss_count = 0, total_cache_delay = 0;
 	Node* N = nullptr;
 	for (uint64_t i = 0; i < iter; ++i) {
-		// we will pick data and put them into cache
-		uint64_t data_id = rgen.pick(1, data_count);
+		// do we have this on cache?
+		uint64_t data_id = dseq[i];
 		if (find_data(cache, data_id)) {
 			hit_count++;
 			total_cache_delay += cache_delay;

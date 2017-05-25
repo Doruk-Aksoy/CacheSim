@@ -2,18 +2,18 @@
 
 #include <algorithm>
 
-Simulation_Result ALG_LRU::work(vector<Node*>& nodes, uint64_t cache_size, uint64_t iter, uint64_t data_count) {
+Simulation_Result ALG_LRU::work(vector<Node*>& nodes, uint64_t cache_size, uint64_t iter, const vector<uint64_t>& dseq) {
 	// create a queue to hold cache_size many elements
 	vector<Data> cache;
 	uint64_t total_delay = 0, hit_count = 0, miss_count = 0, total_cache_delay = 0;
 	Node* N = nullptr;
 	for (uint64_t i = 0; i < iter; ++i) {
-		// we will pick data and put them into cache
-		uint64_t data_id = rgen.pick(1, data_count);
+		// do we have this on cache?
+		uint64_t data_id = dseq[i];
 		if (find_data(cache, data_id)) {
 			hit_count++;
 			total_cache_delay += cache_delay;
-			cache[data_pos].set_freq(cache[data_pos].get_freq() + 1);
+			cache[data_pos].set_age(0); // used, set age to 0
 		}
 		else {
 			if (cache.size() < cache_size) {
@@ -34,7 +34,9 @@ Simulation_Result ALG_LRU::work(vector<Node*>& nodes, uint64_t cache_size, uint6
 				total_delay += sim_delay;
 			}
 		}
-		std::sort(cache.begin(), cache.end(), data_freq_compare());
+		// make data in cache get older each iteration
+		do_age_pass(cache);
+		std::sort(cache.begin(), cache.end(), data_age_compare());
 	}
 	return Simulation_Result(hit_count, miss_count, total_delay, total_cache_delay, iter);
 }

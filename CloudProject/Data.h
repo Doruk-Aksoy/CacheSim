@@ -93,9 +93,9 @@ class Data {
 
 data_type get_type_from_label(const string&);
 
-struct data_freq_compare {
+struct data_age_compare {
 	bool operator() (const Data& D1, const Data& D2) const {
-		return D1.get_freq() < D2.get_freq();
+		return D1.get_age() >= D2.get_age();
 	}
 };
 

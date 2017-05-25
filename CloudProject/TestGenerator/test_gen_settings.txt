@@ -1,7 +1,7 @@
 # Node count, amount of nodes in cloud
 NODES = 20
 # Node data max count, maximum data per node
-DATA_PER_NODE = 15
+DATA_PER_NODE = 10
 # DATA_SIZE_MIN, controls minimum value of data size simulated in mega bytes
 DATA_SIZE_MIN = 10
 # DATA_SIZE_MAX, controls maximum value of data size simulated in mega bytes

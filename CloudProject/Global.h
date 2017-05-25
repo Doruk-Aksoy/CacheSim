@@ -9,6 +9,7 @@
 #include <string>
 #include <sstream>
 
+#define MAX_ALGORITHMS 3
 #define MAX_PARAMS 5
 #define CACHE_DATA_ACCESS_DELAY 5 // 5 ns assumed
 #define DELAY_CONVERT_RATIO 1000.0 // from ms to us

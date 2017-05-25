@@ -37,7 +37,12 @@ class Algorithm {
 					cache_delay += CACHE_DATA_ACCESS_DELAY;
 					data_pos++;
 				}
-				return false;
+			return false;
+		}
+
+		void do_age_pass(vector<Data>& cache) {
+			for (Data& D : cache)
+				D.set_age(D.get_age() + 1);
 		}
 
 		uint64_t get_sim_delay() const {
@@ -48,7 +53,7 @@ class Algorithm {
 			return data_pos;
 		}
 
-		virtual Simulation_Result work(vector<Node*>&, uint64_t, uint64_t, uint64_t) = 0;
+		virtual Simulation_Result work(vector<Node*>&, uint64_t, uint64_t, const vector<uint64_t>&) = 0;
 		
 	protected:
 		

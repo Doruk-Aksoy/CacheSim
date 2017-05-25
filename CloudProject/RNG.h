@@ -11,8 +11,10 @@ class RNG {
 	    RNG() = default; // assign default constructor
 	    ~RNG() = default;
 	    RNG(std::mt19937::result_type seed) : eng(seed) {} // seed the mersenne twister engine for use
-		int64 pick(int64 min, int64 max) {
-		    return std::uniform_int_distribution<int64> {min, max} (eng); // uniformly distribute numbers in range, use mersenne twister to pick
+
+		template <typename T>
+		T pick(T min, T max) {
+		    return std::uniform_int_distribution<T> {min, max} (eng); // uniformly distribute numbers in range, use mersenne twister to pick
 		}
 
 	private:        

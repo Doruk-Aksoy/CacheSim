@@ -6,15 +6,15 @@
 
 // delay calculation from here: http://people.kth.se/~ingo/MasterThesis/ThesisDamienGille2007.pdf
 
-Simulation_Result ALG_FIFO::work(vector<Node*>& nodes, uint64_t cache_size, uint64_t iter, uint64_t data_count) {
+Simulation_Result ALG_FIFO::work(vector<Node*>& nodes, uint64_t cache_size, uint64_t iter, const vector<uint64_t>& dseq) {
 	// create a queue to hold cache_size many elements
 	vector<Data> cache;
 	uint64_t total_delay = 0, hit_count = 0, miss_count = 0, total_cache_delay = 0;
 	Node* N = nullptr;
 	for (uint64_t i = 0; i < iter; ++i) {
 		// we will pick data and put them into cache
-		uint64_t data_id = rgen.pick(1, data_count);
-		// put the data in the cache if not full
+		uint64_t data_id = dseq[i];
+		// do we have this on cache?
 		if (find_data(cache, data_id)) {
 			hit_count++;
 			total_cache_delay += cache_delay;
