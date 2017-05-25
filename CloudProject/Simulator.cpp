@@ -91,7 +91,7 @@ void Simulator::dump_nodes() {
 	}
 }
 
-void Simulator::run(int id) {
+void Simulator::run(int id, const vector<uint64_t>& data_seq) {
 	stringstream temp;
 	temp << "test_" << id << ".txt";
 	// first read the random test data generated

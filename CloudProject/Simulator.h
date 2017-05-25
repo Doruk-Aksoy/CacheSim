@@ -18,7 +18,7 @@ class Simulator {
 	
 	public:
 		
-		Simulator(sim_t s, uint64_t i, uint64_t c, vector<uint64_t> ds) : st(s), iter(i), cache_size(c), data_count(0), data_seq(ds) { }
+		Simulator(sim_t s, uint64_t i, uint64_t c) : st(s), iter(i), cache_size(c), data_count(0) { }
 		~Simulator();
 		
 		uint64_t get_frame() {
@@ -29,7 +29,7 @@ class Simulator {
 			frame = f;
 		}
 		
-		void run(int);														// Runs the simulation on given file #
+		void run(int, const vector<uint64_t>&);								// Runs the simulation on given file #
 		void dump_nodes();													// Debug
 		void read_data(const string&);										// Reads data from file
 		void report_result(const Simulation_Result& ,int);					// Dumps output file
@@ -42,7 +42,6 @@ class Simulator {
 		uint64_t			cache_size;										// Size of the cache
 		sim_t				st;												// Simulation type (Algorithm)
 		vector<Node*>		nodes;											// Nodes to run the simulation on
-		vector<uint64_t>	data_seq;										// sequence of the data to run the tests on
 
 		uint64_t			data_count;										// Total count of data in all nodes
 

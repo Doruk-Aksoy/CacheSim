@@ -15,8 +15,8 @@
 #define DELAY_CONVERT_RATIO 1000.0 // from ms to us
 #define CACHE_CONVERT_RATIO 1000000.0 // from ns to ms
 
-#define WEIGHT_AGEFREQ_RATIO 50.0
-#define WEIGHT_METATYPE_RATIO 50.0 / 12.0
+#define WEIGHT_AGEFREQ_RATIO 500.0
+#define WEIGHT_METATYPE_RATIO 500.0 / 12.0
 
 using std::cout;
 using std::cin;

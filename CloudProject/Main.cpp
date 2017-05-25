@@ -5,7 +5,6 @@
 
 int main(int agrc, char* argv[]) {
 begin:
-	vector<uint64_t> data_ids;
 	int begin, end;
 	uint64_t iterations, cache_count, maxd;
 	cout << "The simulator will run FIFO, LRU and SKF on given test files.\nEnter max data count: ";
@@ -18,11 +17,13 @@ begin:
 	cout << "Cache size? (How many elements to cache) ";
 	cin >> cache_count;
 	// populate the data sequence to test for
-	Simulator::populate(data_ids, maxd, iterations);
+	vector<vector<uint64_t>> wholeseq(end - begin + 1);
+	for (int i = 0; i <= end - begin; ++i)
+		Simulator::populate(wholeseq[i], maxd, iterations);
 	for (int i = 0; i < MAX_ALGORITHMS; ++i) {
-		Simulator S(static_cast<sim_t>(i), iterations, cache_count, data_ids);
+		Simulator S(static_cast<sim_t>(i), iterations, cache_count);
 		for (int j = begin; j <= end; ++j)
-			S.run(j);
+			S.run(j, wholeseq[j - 1]); // assuming 1 indexed
 	}
 
 	char rep;
