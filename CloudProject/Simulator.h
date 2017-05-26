@@ -9,10 +9,11 @@
 enum sim_t {
 	SIM_FIFO,
 	SIM_LRU,
-	SIM_SKF
+	SIM_SKF,
+	SIM_OPT
 };
 
-extern const char* simulation_label[SIM_SKF + 1];
+extern const char* simulation_label[SIM_OPT + 1];
 
 class Simulator {
 	
@@ -29,10 +30,10 @@ class Simulator {
 			frame = f;
 		}
 		
-		void run(int, const vector<uint64_t>&);								// Runs the simulation on given file #
+		void run(int, const vector<vector<uint64_t>>&);						// Runs the simulation on given file #
 		void dump_nodes();													// Debug
 		void read_data(const string&);										// Reads data from file
-		void report_result(const Simulation_Result& ,int);					// Dumps output file
+		void report_result(const Simulation_Result& ,int, size_t);			// Dumps output file
 		static void populate(vector<uint64_t>& d, uint64_t, uint64_t);		// populates a given vector
 		
 	private:

@@ -4,6 +4,7 @@
 #include "ALG_FIFO.h"
 #include "ALG_LRU.h"
 #include "ALG_SKF.h"
+#include "ALG_OPT.h"
 
 class Algorithm_Factory {
 
@@ -14,8 +15,10 @@ class Algorithm_Factory {
 				return new ALG_FIFO();
 			else if (s == SIM_LRU)
 				return new ALG_LRU();
-			else
+			else if (s == SIM_SKF)
 				return new ALG_SKF();
+			else
+				return new ALG_OPT();
 		}
 
 };

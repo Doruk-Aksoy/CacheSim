@@ -23,6 +23,7 @@
     <ClInclude Include="Algorithm_Factory.h" />
     <ClInclude Include="ALG_FIFO.h" />
     <ClInclude Include="ALG_LRU.h" />
+    <ClInclude Include="ALG_OPT.h" />
     <ClInclude Include="ALG_SKF.h" />
     <ClInclude Include="Data.h" />
     <ClInclude Include="Global.h" />
@@ -34,6 +35,7 @@
   <ItemGroup>
     <ClCompile Include="ALG_FIFO.cpp" />
     <ClCompile Include="ALG_LRU.cpp" />
+    <ClCompile Include="ALG_OPT.cpp" />
     <ClCompile Include="ALG_SKF.cpp" />
     <ClCompile Include="Data.cpp" />
     <ClCompile Include="Main.cpp" />
