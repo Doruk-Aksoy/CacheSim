@@ -34,7 +34,7 @@ class Simulator {
 		void dump_nodes();													// Debug
 		void read_data(const string&);										// Reads data from file
 		void report_result(const Simulation_Result& ,int, size_t);			// Dumps output file
-		static void populate(vector<uint64_t>& d, uint64_t, uint64_t);		// populates a given vector
+		static void populate(vector<uint64_t>& d, uint64_t, uint64_t, int);	// populates a given vector
 		
 	private:
 		

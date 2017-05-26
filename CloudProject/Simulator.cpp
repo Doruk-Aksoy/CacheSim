@@ -77,9 +77,12 @@ void Simulator::read_data(const string& fname) {
 		cout << "File could not be opened.\n";
 }
 
-void Simulator::populate(vector<uint64_t>& ds, uint64_t maxd, uint64_t it) {
+void Simulator::populate(vector<uint64_t>& ds, uint64_t maxd, uint64_t it, int dist) {
 	for (uint64_t i = 0; i < it; ++i)
-		ds.push_back(rgen.pick<uint64_t>(1, maxd));
+		if(!dist)
+			ds.push_back(rgen.pick<uint64_t>(1, maxd));
+		else
+			ds.push_back(rgen.pick_exp<uint64_t>(1, maxd));
 }
 
 void Simulator::dump_nodes() {
