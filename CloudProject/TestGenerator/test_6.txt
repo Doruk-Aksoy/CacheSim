@@ -1,0 +1,1260 @@
+--- NODE 1 DATA ---
+Node: 1
+Data size: 29195
+Data delay max: 59
+Data type: On Demand
+Data meta: 3
+Node: 2
+Data size: 16693
+Data delay max: 20
+Data type: Emergency
+Data meta: 4
+Node: 3
+Data size: 74391
+Data delay max: 67
+Data type: Emergency
+Data meta: 1
+Node: 4
+Data size: 24577
+Data delay max: 97
+Data type: Emergency
+Data meta: 2
+Node: 5
+Data size: 71263
+Data delay max: 28
+Data type: Emergency
+Data meta: 4
+Node: 6
+Data size: 64522
+Data delay max: 183
+Data type: Emergency
+Data meta: 0
+Node: 7
+Data size: 41022
+Data delay max: 78
+Data type: On Demand
+Data meta: 4
+Node: 8
+Data size: 28464
+Data delay max: 31
+Data type: Emergency
+Data meta: 4
+Node: 9
+Data size: 57104
+Data delay max: 118
+Data type: On Demand
+Data meta: 4
+Node: 10
+Data size: 97363
+Data delay max: 10
+Data type: Emergency
+Data meta: 4
+Node: 11
+Data size: 123524
+Data delay max: 36
+Data type: Emergency
+Data meta: 3
+Node: 12
+Data size: 10030
+Data delay max: 144
+Data type: On Demand
+Data meta: 4
+Node: 13
+Data size: 55087
+Data delay max: 68
+Data type: On Demand
+Data meta: 3
+Node: 14
+Data size: 22014
+Data delay max: 157
+Data type: Emergency
+Data meta: 4
+Node: 15
+Data size: 11436
+Data delay max: 123
+Data type: Periodic
+Data meta: 4
+Node: 16
+Data size: 86063
+Data delay max: 108
+Data type: Emergency
+Data meta: 3
+Node: 17
+Data size: 68528
+Data delay max: 76
+Data type: Periodic
+Data meta: 4
+Node: 18
+Data size: 82398
+Data delay max: 170
+Data type: Emergency
+Data meta: 3
+Node: 19
+Data size: 90750
+Data delay max: 126
+Data type: Emergency
+Data meta: 4
+Node: 20
+Data size: 96330
+Data delay max: 6
+Data type: On Demand
+Data meta: 4
+Node: 21
+Data size: 79893
+Data delay max: 37
+Data type: Emergency
+Data meta: 2
+Node: 22
+Data size: 101313
+Data delay max: 27
+Data type: On Demand
+Data meta: 3
+Node: 23
+Data size: 47479
+Data delay max: 105
+Data type: On Demand
+Data meta: 4
+Node: 24
+Data size: 115394
+Data delay max: 140
+Data type: Emergency
+Data meta: 2
+Node: 25
+Data size: 77612
+Data delay max: 12
+Data type: Emergency
+Data meta: 4
+--- NODE 2 DATA ---
+Node: 26
+Data size: 54152
+Data delay max: 84
+Data type: Emergency
+Data meta: 3
+Node: 27
+Data size: 80466
+Data delay max: 166
+Data type: Periodic
+Data meta: 4
+Node: 28
+Data size: 73650
+Data delay max: 83
+Data type: On Demand
+Data meta: 3
+Node: 29
+Data size: 32017
+Data delay max: 162
+Data type: Emergency
+Data meta: 3
+Node: 30
+Data size: 69053
+Data delay max: 47
+Data type: Emergency
+Data meta: 2
+Node: 31
+Data size: 53387
+Data delay max: 83
+Data type: Emergency
+Data meta: 2
+Node: 32
+Data size: 96905
+Data delay max: 140
+Data type: On Demand
+Data meta: 2
+Node: 33
+Data size: 75587
+Data delay max: 12
+Data type: Periodic
+Data meta: 4
+Node: 34
+Data size: 119146
+Data delay max: 60
+Data type: Emergency
+Data meta: 4
+Node: 35
+Data size: 79902
+Data delay max: 87
+Data type: Emergency
+Data meta: 4
+Node: 36
+Data size: 1789
+Data delay max: 161
+Data type: On Demand
+Data meta: 3
+Node: 37
+Data size: 98757
+Data delay max: 153
+Data type: Emergency
+Data meta: 0
+Node: 38
+Data size: 29457
+Data delay max: 199
+Data type: Emergency
+Data meta: 4
+Node: 39
+Data size: 24425
+Data delay max: 4
+Data type: Emergency
+Data meta: 2
+Node: 40
+Data size: 17303
+Data delay max: 173
+Data type: Emergency
+Data meta: 3
+Node: 41
+Data size: 11437
+Data delay max: 74
+Data type: Periodic
+Data meta: 4
+Node: 42
+Data size: 72135
+Data delay max: 55
+Data type: Emergency
+Data meta: 4
+Node: 43
+Data size: 1181
+Data delay max: 66
+Data type: On Demand
+Data meta: 4
+Node: 44
+Data size: 50432
+Data delay max: 23
+Data type: Emergency
+Data meta: 2
+Node: 45
+Data size: 42916
+Data delay max: 159
+Data type: On Demand
+Data meta: 3
+Node: 46
+Data size: 54490
+Data delay max: 38
+Data type: Periodic
+Data meta: 3
+Node: 47
+Data size: 63196
+Data delay max: 193
+Data type: On Demand
+Data meta: 4
+Node: 48
+Data size: 86749
+Data delay max: 43
+Data type: Emergency
+Data meta: 3
+Node: 49
+Data size: 39239
+Data delay max: 148
+Data type: Emergency
+Data meta: 4
+Node: 50
+Data size: 88031
+Data delay max: 79
+Data type: On Demand
+Data meta: 4
+--- NODE 3 DATA ---
+Node: 51
+Data size: 118015
+Data delay max: 37
+Data type: Emergency
+Data meta: 2
+Node: 52
+Data size: 22880
+Data delay max: 146
+Data type: On Demand
+Data meta: 3
+Node: 53
+Data size: 20587
+Data delay max: 64
+Data type: Periodic
+Data meta: 3
+Node: 54
+Data size: 113369
+Data delay max: 59
+Data type: Periodic
+Data meta: 3
+Node: 55
+Data size: 41851
+Data delay max: 198
+Data type: Periodic
+Data meta: 4
+Node: 56
+Data size: 16562
+Data delay max: 109
+Data type: Emergency
+Data meta: 3
+Node: 57
+Data size: 68908
+Data delay max: 169
+Data type: Emergency
+Data meta: 4
+Node: 58
+Data size: 76381
+Data delay max: 163
+Data type: On Demand
+Data meta: 3
+Node: 59
+Data size: 110549
+Data delay max: 3
+Data type: Emergency
+Data meta: 4
+Node: 60
+Data size: 103504
+Data delay max: 117
+Data type: Emergency
+Data meta: 1
+Node: 61
+Data size: 16424
+Data delay max: 114
+Data type: Emergency
+Data meta: 0
+Node: 62
+Data size: 106303
+Data delay max: 180
+Data type: Emergency
+Data meta: 3
+Node: 63
+Data size: 113910
+Data delay max: 168
+Data type: Emergency
+Data meta: 4
+Node: 64
+Data size: 59229
+Data delay max: 156
+Data type: Periodic
+Data meta: 0
+Node: 65
+Data size: 129527
+Data delay max: 175
+Data type: Periodic
+Data meta: 3
+Node: 66
+Data size: 85275
+Data delay max: 131
+Data type: Emergency
+Data meta: 4
+Node: 67
+Data size: 55170
+Data delay max: 0
+Data type: On Demand
+Data meta: 4
+Node: 68
+Data size: 31520
+Data delay max: 18
+Data type: Emergency
+Data meta: 3
+Node: 69
+Data size: 81374
+Data delay max: 10
+Data type: Emergency
+Data meta: 0
+Node: 70
+Data size: 8732
+Data delay max: 85
+Data type: Emergency
+Data meta: 2
+Node: 71
+Data size: 48125
+Data delay max: 29
+Data type: Emergency
+Data meta: 1
+Node: 72
+Data size: 72246
+Data delay max: 11
+Data type: Emergency
+Data meta: 2
+Node: 73
+Data size: 70000
+Data delay max: 103
+Data type: On Demand
+Data meta: 4
+Node: 74
+Data size: 82219
+Data delay max: 112
+Data type: On Demand
+Data meta: 3
+Node: 75
+Data size: 115872
+Data delay max: 177
+Data type: Emergency
+Data meta: 4
+--- NODE 4 DATA ---
+Node: 76
+Data size: 126578
+Data delay max: 54
+Data type: Emergency
+Data meta: 4
+Node: 77
+Data size: 23916
+Data delay max: 125
+Data type: Periodic
+Data meta: 4
+Node: 78
+Data size: 14866
+Data delay max: 179
+Data type: Periodic
+Data meta: 4
+Node: 79
+Data size: 27096
+Data delay max: 159
+Data type: On Demand
+Data meta: 4
+Node: 80
+Data size: 11639
+Data delay max: 79
+Data type: Emergency
+Data meta: 3
+Node: 81
+Data size: 124119
+Data delay max: 115
+Data type: Emergency
+Data meta: 3
+Node: 82
+Data size: 35343
+Data delay max: 82
+Data type: On Demand
+Data meta: 4
+Node: 83
+Data size: 60707
+Data delay max: 150
+Data type: Emergency
+Data meta: 2
+Node: 84
+Data size: 57900
+Data delay max: 81
+Data type: On Demand
+Data meta: 4
+Node: 85
+Data size: 89045
+Data delay max: 70
+Data type: Emergency
+Data meta: 3
+Node: 86
+Data size: 10917
+Data delay max: 145
+Data type: Emergency
+Data meta: 4
+Node: 87
+Data size: 10849
+Data delay max: 200
+Data type: Emergency
+Data meta: 4
+Node: 88
+Data size: 27
+Data delay max: 13
+Data type: On Demand
+Data meta: 4
+Node: 89
+Data size: 103491
+Data delay max: 23
+Data type: Emergency
+Data meta: 2
+Node: 90
+Data size: 32104
+Data delay max: 194
+Data type: Emergency
+Data meta: 3
+Node: 91
+Data size: 92761
+Data delay max: 92
+Data type: Periodic
+Data meta: 2
+Node: 92
+Data size: 74429
+Data delay max: 123
+Data type: On Demand
+Data meta: 4
+Node: 93
+Data size: 30471
+Data delay max: 4
+Data type: Periodic
+Data meta: 1
+Node: 94
+Data size: 121193
+Data delay max: 103
+Data type: Emergency
+Data meta: 1
+Node: 95
+Data size: 95214
+Data delay max: 193
+Data type: On Demand
+Data meta: 3
+Node: 96
+Data size: 928
+Data delay max: 87
+Data type: Emergency
+Data meta: 0
+Node: 97
+Data size: 40557
+Data delay max: 60
+Data type: Periodic
+Data meta: 1
+Node: 98
+Data size: 87871
+Data delay max: 106
+Data type: On Demand
+Data meta: 3
+Node: 99
+Data size: 50763
+Data delay max: 82
+Data type: Emergency
+Data meta: 4
+Node: 100
+Data size: 84743
+Data delay max: 158
+Data type: On Demand
+Data meta: 3
+--- NODE 5 DATA ---
+Node: 101
+Data size: 77766
+Data delay max: 189
+Data type: Emergency
+Data meta: 3
+Node: 102
+Data size: 43484
+Data delay max: 15
+Data type: On Demand
+Data meta: 4
+Node: 103
+Data size: 53228
+Data delay max: 189
+Data type: Emergency
+Data meta: 4
+Node: 104
+Data size: 117491
+Data delay max: 135
+Data type: Emergency
+Data meta: 4
+Node: 105
+Data size: 73146
+Data delay max: 33
+Data type: Periodic
+Data meta: 4
+Node: 106
+Data size: 105154
+Data delay max: 85
+Data type: Emergency
+Data meta: 4
+Node: 107
+Data size: 15182
+Data delay max: 100
+Data type: Emergency
+Data meta: 3
+Node: 108
+Data size: 81835
+Data delay max: 84
+Data type: On Demand
+Data meta: 0
+Node: 109
+Data size: 121540
+Data delay max: 152
+Data type: Periodic
+Data meta: 3
+Node: 110
+Data size: 86543
+Data delay max: 101
+Data type: Emergency
+Data meta: 4
+Node: 111
+Data size: 78272
+Data delay max: 137
+Data type: Periodic
+Data meta: 0
+Node: 112
+Data size: 102918
+Data delay max: 127
+Data type: Periodic
+Data meta: 3
+Node: 113
+Data size: 2746
+Data delay max: 21
+Data type: Emergency
+Data meta: 4
+Node: 114
+Data size: 128554
+Data delay max: 33
+Data type: Emergency
+Data meta: 4
+Node: 115
+Data size: 2046
+Data delay max: 56
+Data type: Periodic
+Data meta: 4
+Node: 116
+Data size: 72311
+Data delay max: 45
+Data type: Emergency
+Data meta: 2
+Node: 117
+Data size: 51606
+Data delay max: 104
+Data type: Periodic
+Data meta: 3
+Node: 118
+Data size: 37622
+Data delay max: 145
+Data type: Emergency
+Data meta: 4
+Node: 119
+Data size: 11569
+Data delay max: 62
+Data type: Emergency
+Data meta: 4
+Node: 120
+Data size: 77499
+Data delay max: 92
+Data type: Emergency
+Data meta: 4
+Node: 121
+Data size: 5726
+Data delay max: 82
+Data type: On Demand
+Data meta: 3
+Node: 122
+Data size: 51061
+Data delay max: 46
+Data type: Emergency
+Data meta: 4
+Node: 123
+Data size: 75362
+Data delay max: 165
+Data type: Emergency
+Data meta: 3
+Node: 124
+Data size: 34598
+Data delay max: 83
+Data type: On Demand
+Data meta: 4
+Node: 125
+Data size: 51818
+Data delay max: 199
+Data type: Emergency
+Data meta: 3
+--- NODE 6 DATA ---
+Node: 126
+Data size: 126955
+Data delay max: 182
+Data type: On Demand
+Data meta: 1
+Node: 127
+Data size: 126931
+Data delay max: 69
+Data type: Periodic
+Data meta: 4
+Node: 128
+Data size: 10251
+Data delay max: 97
+Data type: Emergency
+Data meta: 3
+Node: 129
+Data size: 100879
+Data delay max: 160
+Data type: On Demand
+Data meta: 4
+Node: 130
+Data size: 79361
+Data delay max: 46
+Data type: On Demand
+Data meta: 1
+Node: 131
+Data size: 62709
+Data delay max: 60
+Data type: Emergency
+Data meta: 3
+Node: 132
+Data size: 90789
+Data delay max: 151
+Data type: On Demand
+Data meta: 0
+Node: 133
+Data size: 84564
+Data delay max: 85
+Data type: On Demand
+Data meta: 4
+Node: 134
+Data size: 30420
+Data delay max: 160
+Data type: Periodic
+Data meta: 3
+Node: 135
+Data size: 57488
+Data delay max: 131
+Data type: Emergency
+Data meta: 2
+Node: 136
+Data size: 33142
+Data delay max: 151
+Data type: Emergency
+Data meta: 4
+Node: 137
+Data size: 130977
+Data delay max: 157
+Data type: Periodic
+Data meta: 1
+Node: 138
+Data size: 91272
+Data delay max: 190
+Data type: Periodic
+Data meta: 3
+Node: 139
+Data size: 31057
+Data delay max: 148
+Data type: Emergency
+Data meta: 4
+Node: 140
+Data size: 60684
+Data delay max: 193
+Data type: Emergency
+Data meta: 1
+Node: 141
+Data size: 60123
+Data delay max: 63
+Data type: On Demand
+Data meta: 1
+Node: 142
+Data size: 5421
+Data delay max: 113
+Data type: Periodic
+Data meta: 4
+Node: 143
+Data size: 102995
+Data delay max: 156
+Data type: Emergency
+Data meta: 4
+Node: 144
+Data size: 11242
+Data delay max: 161
+Data type: Emergency
+Data meta: 2
+Node: 145
+Data size: 40659
+Data delay max: 86
+Data type: On Demand
+Data meta: 4
+Node: 146
+Data size: 18667
+Data delay max: 78
+Data type: Emergency
+Data meta: 1
+Node: 147
+Data size: 82533
+Data delay max: 134
+Data type: On Demand
+Data meta: 3
+Node: 148
+Data size: 103981
+Data delay max: 112
+Data type: On Demand
+Data meta: 4
+Node: 149
+Data size: 8366
+Data delay max: 159
+Data type: Emergency
+Data meta: 1
+Node: 150
+Data size: 77026
+Data delay max: 75
+Data type: Emergency
+Data meta: 4
+--- NODE 7 DATA ---
+Node: 151
+Data size: 118424
+Data delay max: 150
+Data type: Emergency
+Data meta: 4
+Node: 152
+Data size: 104037
+Data delay max: 180
+Data type: Emergency
+Data meta: 3
+Node: 153
+Data size: 30623
+Data delay max: 100
+Data type: On Demand
+Data meta: 4
+Node: 154
+Data size: 51112
+Data delay max: 99
+Data type: Emergency
+Data meta: 3
+Node: 155
+Data size: 10446
+Data delay max: 58
+Data type: Emergency
+Data meta: 4
+Node: 156
+Data size: 8059
+Data delay max: 95
+Data type: On Demand
+Data meta: 1
+Node: 157
+Data size: 98509
+Data delay max: 75
+Data type: Periodic
+Data meta: 4
+Node: 158
+Data size: 61447
+Data delay max: 84
+Data type: Periodic
+Data meta: 4
+Node: 159
+Data size: 22324
+Data delay max: 80
+Data type: Emergency
+Data meta: 3
+Node: 160
+Data size: 70388
+Data delay max: 147
+Data type: Periodic
+Data meta: 4
+Node: 161
+Data size: 40881
+Data delay max: 29
+Data type: Emergency
+Data meta: 4
+Node: 162
+Data size: 55196
+Data delay max: 3
+Data type: On Demand
+Data meta: 4
+Node: 163
+Data size: 26555
+Data delay max: 191
+Data type: Emergency
+Data meta: 0
+Node: 164
+Data size: 22495
+Data delay max: 145
+Data type: Periodic
+Data meta: 3
+Node: 165
+Data size: 119655
+Data delay max: 102
+Data type: Emergency
+Data meta: 3
+Node: 166
+Data size: 28411
+Data delay max: 115
+Data type: Emergency
+Data meta: 4
+Node: 167
+Data size: 95555
+Data delay max: 191
+Data type: On Demand
+Data meta: 3
+Node: 168
+Data size: 43215
+Data delay max: 170
+Data type: Emergency
+Data meta: 4
+Node: 169
+Data size: 18819
+Data delay max: 197
+Data type: On Demand
+Data meta: 2
+Node: 170
+Data size: 28691
+Data delay max: 118
+Data type: Emergency
+Data meta: 2
+Node: 171
+Data size: 51329
+Data delay max: 30
+Data type: Emergency
+Data meta: 4
+Node: 172
+Data size: 111039
+Data delay max: 118
+Data type: Periodic
+Data meta: 3
+Node: 173
+Data size: 45621
+Data delay max: 57
+Data type: Periodic
+Data meta: 4
+Node: 174
+Data size: 90833
+Data delay max: 89
+Data type: On Demand
+Data meta: 4
+Node: 175
+Data size: 76326
+Data delay max: 87
+Data type: Emergency
+Data meta: 3
+--- NODE 8 DATA ---
+Node: 176
+Data size: 81316
+Data delay max: 6
+Data type: Emergency
+Data meta: 4
+Node: 177
+Data size: 62609
+Data delay max: 134
+Data type: Periodic
+Data meta: 3
+Node: 178
+Data size: 30699
+Data delay max: 183
+Data type: Periodic
+Data meta: 3
+Node: 179
+Data size: 77255
+Data delay max: 108
+Data type: Emergency
+Data meta: 4
+Node: 180
+Data size: 114442
+Data delay max: 75
+Data type: On Demand
+Data meta: 2
+Node: 181
+Data size: 45213
+Data delay max: 200
+Data type: Emergency
+Data meta: 4
+Node: 182
+Data size: 54994
+Data delay max: 40
+Data type: Emergency
+Data meta: 4
+Node: 183
+Data size: 29061
+Data delay max: 174
+Data type: Emergency
+Data meta: 4
+Node: 184
+Data size: 79151
+Data delay max: 139
+Data type: Emergency
+Data meta: 4
+Node: 185
+Data size: 93920
+Data delay max: 198
+Data type: Emergency
+Data meta: 4
+Node: 186
+Data size: 95378
+Data delay max: 93
+Data type: Periodic
+Data meta: 4
+Node: 187
+Data size: 22659
+Data delay max: 199
+Data type: Emergency
+Data meta: 3
+Node: 188
+Data size: 98177
+Data delay max: 109
+Data type: On Demand
+Data meta: 4
+Node: 189
+Data size: 115800
+Data delay max: 7
+Data type: Emergency
+Data meta: 3
+Node: 190
+Data size: 104144
+Data delay max: 152
+Data type: On Demand
+Data meta: 4
+Node: 191
+Data size: 27960
+Data delay max: 187
+Data type: Emergency
+Data meta: 0
+Node: 192
+Data size: 41294
+Data delay max: 173
+Data type: Emergency
+Data meta: 2
+Node: 193
+Data size: 33392
+Data delay max: 124
+Data type: On Demand
+Data meta: 1
+Node: 194
+Data size: 106161
+Data delay max: 188
+Data type: Emergency
+Data meta: 0
+Node: 195
+Data size: 57976
+Data delay max: 22
+Data type: On Demand
+Data meta: 2
+Node: 196
+Data size: 16958
+Data delay max: 70
+Data type: Emergency
+Data meta: 1
+Node: 197
+Data size: 78104
+Data delay max: 107
+Data type: Emergency
+Data meta: 3
+Node: 198
+Data size: 89247
+Data delay max: 142
+Data type: Emergency
+Data meta: 1
+Node: 199
+Data size: 6156
+Data delay max: 175
+Data type: On Demand
+Data meta: 1
+Node: 200
+Data size: 74795
+Data delay max: 152
+Data type: Emergency
+Data meta: 3
+--- NODE 9 DATA ---
+Node: 201
+Data size: 109481
+Data delay max: 134
+Data type: Emergency
+Data meta: 4
+Node: 202
+Data size: 84101
+Data delay max: 127
+Data type: Emergency
+Data meta: 2
+Node: 203
+Data size: 55786
+Data delay max: 97
+Data type: Emergency
+Data meta: 4
+Node: 204
+Data size: 102865
+Data delay max: 95
+Data type: Emergency
+Data meta: 2
+Node: 205
+Data size: 7763
+Data delay max: 200
+Data type: On Demand
+Data meta: 4
+Node: 206
+Data size: 40863
+Data delay max: 87
+Data type: Emergency
+Data meta: 0
+Node: 207
+Data size: 97857
+Data delay max: 53
+Data type: On Demand
+Data meta: 4
+Node: 208
+Data size: 112259
+Data delay max: 199
+Data type: On Demand
+Data meta: 3
+Node: 209
+Data size: 52628
+Data delay max: 166
+Data type: Emergency
+Data meta: 3
+Node: 210
+Data size: 4030
+Data delay max: 134
+Data type: Emergency
+Data meta: 4
+Node: 211
+Data size: 92909
+Data delay max: 145
+Data type: Emergency
+Data meta: 4
+Node: 212
+Data size: 96995
+Data delay max: 131
+Data type: Emergency
+Data meta: 4
+Node: 213
+Data size: 68893
+Data delay max: 158
+Data type: Emergency
+Data meta: 3
+Node: 214
+Data size: 80252
+Data delay max: 50
+Data type: Emergency
+Data meta: 1
+Node: 215
+Data size: 123195
+Data delay max: 109
+Data type: Periodic
+Data meta: 1
+Node: 216
+Data size: 91632
+Data delay max: 180
+Data type: Periodic
+Data meta: 3
+Node: 217
+Data size: 77652
+Data delay max: 58
+Data type: Emergency
+Data meta: 3
+Node: 218
+Data size: 51649
+Data delay max: 26
+Data type: Emergency
+Data meta: 3
+Node: 219
+Data size: 128473
+Data delay max: 32
+Data type: Periodic
+Data meta: 4
+Node: 220
+Data size: 34967
+Data delay max: 130
+Data type: Periodic
+Data meta: 4
+Node: 221
+Data size: 82813
+Data delay max: 157
+Data type: Emergency
+Data meta: 4
+Node: 222
+Data size: 47575
+Data delay max: 76
+Data type: On Demand
+Data meta: 4
+Node: 223
+Data size: 25904
+Data delay max: 126
+Data type: Emergency
+Data meta: 3
+Node: 224
+Data size: 29926
+Data delay max: 28
+Data type: Emergency
+Data meta: 1
+Node: 225
+Data size: 19106
+Data delay max: 92
+Data type: Emergency
+Data meta: 2
+--- NODE 10 DATA ---
+Node: 226
+Data size: 243
+Data delay max: 100
+Data type: On Demand
+Data meta: 4
+Node: 227
+Data size: 34910
+Data delay max: 178
+Data type: Emergency
+Data meta: 4
+Node: 228
+Data size: 29642
+Data delay max: 127
+Data type: Emergency
+Data meta: 2
+Node: 229
+Data size: 29643
+Data delay max: 107
+Data type: Emergency
+Data meta: 4
+Node: 230
+Data size: 29605
+Data delay max: 99
+Data type: Periodic
+Data meta: 4
+Node: 231
+Data size: 34539
+Data delay max: 20
+Data type: Emergency
+Data meta: 2
+Node: 232
+Data size: 121275
+Data delay max: 30
+Data type: On Demand
+Data meta: 4
+Node: 233
+Data size: 53309
+Data delay max: 26
+Data type: On Demand
+Data meta: 3
+Node: 234
+Data size: 63747
+Data delay max: 160
+Data type: Periodic
+Data meta: 1
+Node: 235
+Data size: 78433
+Data delay max: 141
+Data type: On Demand
+Data meta: 1
+Node: 236
+Data size: 75305
+Data delay max: 18
+Data type: On Demand
+Data meta: 2
+Node: 237
+Data size: 62902
+Data delay max: 46
+Data type: Emergency
+Data meta: 4
+Node: 238
+Data size: 63940
+Data delay max: 120
+Data type: Emergency
+Data meta: 3
+Node: 239
+Data size: 72316
+Data delay max: 33
+Data type: Emergency
+Data meta: 0
+Node: 240
+Data size: 36836
+Data delay max: 45
+Data type: Emergency
+Data meta: 4
+Node: 241
+Data size: 41990
+Data delay max: 61
+Data type: On Demand
+Data meta: 4
+Node: 242
+Data size: 105400
+Data delay max: 21
+Data type: Emergency
+Data meta: 4
+Node: 243
+Data size: 40774
+Data delay max: 40
+Data type: Emergency
+Data meta: 1
+Node: 244
+Data size: 71393
+Data delay max: 10
+Data type: Emergency
+Data meta: 3
+Node: 245
+Data size: 40774
+Data delay max: 50
+Data type: Emergency
+Data meta: 4
+Node: 246
+Data size: 30701
+Data delay max: 113
+Data type: Emergency
+Data meta: 1
+Node: 247
+Data size: 107490
+Data delay max: 25
+Data type: Emergency
+Data meta: 1
+Node: 248
+Data size: 110724
+Data delay max: 46
+Data type: Emergency
+Data meta: 3
+Node: 249
+Data size: 130348
+Data delay max: 74
+Data type: Periodic
+Data meta: 2
+Node: 250
+Data size: 130150
+Data delay max: 82
+Data type: Emergency
+Data meta: 4
