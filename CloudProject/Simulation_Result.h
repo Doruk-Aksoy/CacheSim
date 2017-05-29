@@ -49,6 +49,17 @@ class Simulation_Result {
 			total_time_to_hit[index] += time_to_hit;
 		}
 
+		static void reset() {
+			for (size_t i = 0; i < MAX_ALGORITHMS; ++i) {
+				total_hit_count[i] = 0;
+				total_miss_count[i] = 0;
+				total_hit_ratio[i] = 0;
+				total_miss_ratio[i] = 0;
+				total_time_to_hit[i] = 0;
+				total_avg_cache_access_delay[i] = 0;
+			}
+		}
+
 		static vector<uint64_t>		total_hit_count;
 		static vector<uint64_t>		total_miss_count;
 		static vector<double>		total_hit_ratio;

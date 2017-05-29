@@ -19,11 +19,7 @@ class RNG {
 
 		template <typename T>
 		T pick_exp(T min, T max) {
-			// to do: turn to version using c++ exp dist
-			double num = std::uniform_real_distribution<double>{ 0.0, 1.0 } (eng);
-			while (num < 1.e-6)
-				num = std::uniform_real_distribution<double>{ 0.0, 1.0 } (eng);
-			T result = -((max + min) / 2.0) * log(num);
+			T result = std::exponential_distribution<>(2.0 / (max + min));
 			if (result < min)
 				result = min;
 			if (result > max)

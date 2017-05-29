@@ -21,6 +21,8 @@ begin:
 	cout << "Cache size? (How many elements to cache) ";
 	cin >> cache_count;
 
+	// Reset accumulations
+	Simulation_Result::reset();
 	// populate the data sequence to test for
 	vector<vector<uint64_t>> wholeseq(numseq);
 	for (int i = 0; i < numseq; ++i)
