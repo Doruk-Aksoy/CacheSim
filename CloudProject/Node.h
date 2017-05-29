@@ -1,10 +1,9 @@
-#ifndef NODE_IN
-#define NODE_IN
+#pragma once
 
 #include "Global.h"
 #include "Data.h"
 
-typedef uint32_t		nodeid_t;
+typedef uint64_t		nodeid_t;
 
 class Node {
 	
@@ -38,6 +37,3 @@ class Node {
 		vector<Data>		data_arr;				// Vector of Data contained in this node
 		
 };
-
-
-#endif

@@ -1,5 +1,4 @@
-#ifndef DATA_IN
-#define DATA_IN
+#pragma once
 
 #include "Global.h"
 
@@ -104,5 +103,3 @@ struct data_skf_compare {
 		return D1.get_skf_value() < D2.get_skf_value();
 	}
 };
-
-#endif

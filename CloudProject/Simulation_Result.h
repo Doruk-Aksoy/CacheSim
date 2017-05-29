@@ -1,5 +1,7 @@
 #pragma once
 
+#include "Global.h"
+
 class Simulation_Result {
 
 	public:
@@ -37,12 +39,30 @@ class Simulation_Result {
 			return total_cache_access_delay;
 		}
 
+		void accumulate(sim_t st) {
+			size_t index = static_cast<size_t>(st);
+			total_hit_count[index] += hit_count;
+			total_miss_count[index] += miss_count;
+			total_hit_ratio[index] += hit_ratio;
+			total_miss_ratio[index] += miss_ratio;
+			total_avg_cache_access_delay[index] += total_cache_access_delay;
+			total_time_to_hit[index] += time_to_hit;
+		}
+
+		static vector<uint64_t>		total_hit_count;
+		static vector<uint64_t>		total_miss_count;
+		static vector<double>		total_hit_ratio;
+		static vector<double>		total_miss_ratio;
+		static vector<double>		total_time_to_hit;
+		static vector<double>		total_avg_cache_access_delay;
+
 	private:
 
-		uint64_t		hit_count;
-		uint64_t		miss_count;
-		double			hit_ratio;
-		double			miss_ratio;
-		double			time_to_hit;
-		double			total_cache_access_delay;
+		uint64_t			hit_count;
+		uint64_t			miss_count;
+		double				hit_ratio;
+		double				miss_ratio;
+		double				time_to_hit;
+		double				total_cache_access_delay;
+
 };

@@ -5,6 +5,7 @@
 
 const char* data_type_labels[DATA_TYPE_EMERGENCY + 1] = { "Periodic", "On Demand", "Emergency" };
 const char* simulation_label[SIM_OPT + 1] = { "FIFO", "LRU", "SKF", "OPT" };
+
 RNG rgen(static_cast<unsigned int>(std::chrono::high_resolution_clock::now().time_since_epoch().count()));
 
 Simulator::~Simulator() {
@@ -106,6 +107,7 @@ void Simulator::run(int id, const vector<vector<uint64_t>>& whole_seq) {
 	Algorithm* A = Algorithm_Factory::get_algorithm(st);
 	for (size_t i = 0; i < whole_seq.size(); ++i) {
 		Simulation_Result R = A->work(nodes, cache_size, iter, whole_seq[i]);
+		R.accumulate(st); // add to overall report result
 		report_result(R, id, i);
 	}
 
@@ -121,5 +123,18 @@ void Simulator::report_result(const Simulation_Result& R, int id, size_t numseq_
 	fstream outf(temp.str(), std::ios::out);
 	outf << "---- Simulation Results ----\n";
 	outf << "Hit Ratio: " << R.get_hit_ratio() << "\nHit Count: " << R.get_hit_count() << "\nMiss Ratio: " << R.get_miss_ratio() << "\nMiss Count: " << R.get_miss_count() << "\nTime-to-hit (ms): " << R.get_time_to_hit() << "\nTotal Cache Delay (ms): " << R.get_total_cache_access_delay();
+	cout << "Simulation ended.\n";
+}
+
+void Simulator::report_summary(int fcount, uint64_t numcount) {
+	fstream outf("simresult_summary.txt", std::ios::out);
+	outf << "---- Simulation Results ----\n\n";
+	uint64_t div = fcount * numcount;
+	for (size_t i = 0; i < MAX_ALGORITHMS; ++i) {
+		outf << simulation_label[i] << " Results:\n";
+		outf << "Hit Ratio: " << Simulation_Result::total_hit_ratio[i] / div << "\nHit Count: " << Simulation_Result::total_hit_count[i] / div
+			 << "\nMiss Ratio: " << Simulation_Result::total_miss_ratio[i] / div << "\nMiss Count: " << Simulation_Result::total_miss_count[i] / div
+			 << "\nTime-to-hit (ms): " << Simulation_Result::total_time_to_hit[i] / div << "\nTotal Cache Delay (ms): " << Simulation_Result::total_avg_cache_access_delay[i] / div << "\n\n";
+	}
 	cout << "Simulation ended.\n";
 }

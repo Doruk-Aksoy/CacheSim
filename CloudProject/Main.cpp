@@ -20,6 +20,7 @@ begin:
 	cin >> iterations;
 	cout << "Cache size? (How many elements to cache) ";
 	cin >> cache_count;
+
 	// populate the data sequence to test for
 	vector<vector<uint64_t>> wholeseq(numseq);
 	for (int i = 0; i < numseq; ++i)
@@ -29,6 +30,7 @@ begin:
 		for (int j = begin; j <= end; ++j)
 			S.run(j, wholeseq);
 	}
+	Simulator::report_summary(end - begin + 1, numseq);
 
 	char rep;
 	cout << "Do you want to repeat? (Y/N)";

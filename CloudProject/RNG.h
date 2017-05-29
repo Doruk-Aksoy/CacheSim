@@ -1,5 +1,4 @@
-#ifndef RNG_IN
-#define RNG_IN
+#pragma once
 
 #include <random>
 #include <chrono>
@@ -38,5 +37,3 @@ class RNG {
 
 // we will use this one for generating, it's global
 extern RNG rgen;
-
-#endif

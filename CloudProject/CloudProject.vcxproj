@@ -39,6 +39,7 @@
     <ClCompile Include="ALG_SKF.cpp" />
     <ClCompile Include="Data.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Simulation_Result.cpp" />
     <ClCompile Include="Simulator.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

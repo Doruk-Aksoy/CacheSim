@@ -1,5 +1,4 @@
-#ifndef GLOBAL_IN
-#define GLOBAL_IN
+#pragma once
 
 #include <iostream>
 #include <vector>
@@ -27,4 +26,4 @@ using std::vector;
 using std::chrono::steady_clock;
 using std::chrono::high_resolution_clock;
 
-#endif
+enum sim_t;
