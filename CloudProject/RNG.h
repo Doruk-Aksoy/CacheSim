@@ -19,7 +19,7 @@ class RNG {
 
 		template <typename T>
 		T pick_exp(T min, T max) {
-			T result = std::exponential_distribution<>(2.0 / (max + min));
+			T result = std::exponential_distribution<T>(2.0 / (max + min)) (eng);
 			if (result < min)
 				result = min;
 			if (result > max)
